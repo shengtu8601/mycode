@@ -1,0 +1,18 @@
+        html, body {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 12px;
+        }
+
+        .base {
+            width: 1000px;
+            height: 100px;
+            margin: 0 auto;
+        }
+        .mc{
+
+            height: 500px;
+            float: left;
+
+        }

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .div {
+            width: 100px;
+            height: 75px;
+            float: left;
+
+        }
+
+        .img {
+            width: 96%;
+            height: 96%;
+
+            margin: 2%
+        }
+    </style>
+    <script type="text/javascript">
+        function setmargin(m) {
+            document.getElementById('bigimg').style.marginLeft = m+'px'
+        }
+        function setimg(s) {
+            document.getElementById('bigimg').src = s
+        }</script>
+</head>
+<body>
+<img id="bigimg" style="width: 400px;height: 300px;margin-left: 0px;;" src="" alt=""/>
+
+<div style="background:#7d7d81;width: 400px;height:75px;">
+    <div class="div"><img onmouseover="setimg(this.src); setmargin(15)"class="img" src="123.jpg" alt=""/></div>
+    <div class="div"><img onmouseover="setimg(this.src); setmargin(6)" class="img" src="56.jpg" alt=""/>
+    </div>
+    <div class="div"><img onmouseover="setimg(this.src); setmargin(7)" class="img" src="78.jpg" alt=""/>
+    </div>
+    <div class="div"><img onmouseover="setimg(this.src); setmargin(8)" class="img" src="99.jpg" alt=""/>
+    </div>
+
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 12px;
+        }
+
+        .top {
+            width: 100%;
+            height: 90px;
+            background-image: url('123456.png');
+
+        }
+
+        .frame {
+            width: 150px;
+            height: 75px;
+            background-color: #ffffff;
+            border: 1px;
+            padding: 12px 15px;
+        }
+
+        .mc {
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        .banner_a {
+            float: left;
+            margin-right: 20px;
+            text-align: center;
+            color: #ffffff;
+            background-color: #ff4f84;
+            height: 25px;
+            line-height: 25px;
+            width: 80px;
+            display: block;
+        }
+        .item_a{
+             float: left;
+             margin-right: 15px;
+             text-align: center;
+             display: block;
+         }
+
+    </style>
+</head>
+<body>
+<div class="top">
+    <div class="mc" style="height: 25px;">
+        <div style="width:300px;height: 25px;float: right;">
+            <a style="font-size:14px;color: #ffffff; text-decoration: none" href="http://www.zugame.com">注册</a>
+            <a style="font-size:14px;color: #ffffff; text-decoration: none" href="http://www.zugame.com">登陆</a>
+            <a style="font-size:14px;color: #ffffff; text-decoration: none" href="http://www.zugame.com">帮助中心</a>
+
+        </div>
+    </div>
+
+    <div style="height: 65px;" class="mc">
+        <img style="float: left;" src="logomo.png" alt=""/>
+
+        <div style="width: 450px;height: 35px;float: left;margin-left:50px;">
+            <select name="xiala">
+                <option value="volvo">商品</option>
+                <option value="saab">店铺</option>
+            </select>
+            <input type="text" name="tiaowen" value="新品热卖">
+
+
+            <input type="button" value="serch"><input style="width:100px;height:30px;margin-left: 50px"
+                                                      type="button" value="购物车">
+        </div>
+    </div>
+
+</div>
+<div style="height: 35px; line-height:35px;width: 100%;background-color: #e5e6e5;">
+    <div class="mc" style="height: 35px; line-height:35px;padding: 5px 0;">
+        <a class="banner_a">
+            首页
+        </a> <a class="banner_a">
+        护肤
+    </a> <a class="banner_a">
+        服饰
+    </a>
+    </div>
+</div>
+<div style="width:100%;height:500px;background-color: #ffbbd7 ">
+    <div style="width: 180px;height: 500px;background-color: #ffffff;float: left;margin-left: 150px; position: relative;">
+        <div id="item1" class="frame">
+            <div style="font-size: 14px;font-family: Microsoft YaHei">衣服</div>
+            <div style="margin-top: 5px;line-height: 20px;">
+                <a class="item_a">item1</a>
+                <a class="item_a">item1</a>
+                <a class="item_a">item1</a>
+                <a class="item_a">item1</a>
+                <a class="item_a">item1</a>
+            </div>
+        </div>
+        <div id="item1_con" style="display:none;position: absolute;left:180px;top:0px;width:150px;height:400px;background-color: green;border:1px solid #cccccc"></div>
+    </div>
+    <div style="width:785px;height:500px;float:left;"><img src="768.jpg" alt=""/></div>
+    <div style="width: 150px;height: 500px;background-color:#fdfffb;float: left">
+        <div style="width: 150px;height: 166px"><img src="" alt=""/>
+
+        </div>
+    </div>
+</div>
+<div class="mc">
+
+</div>
+</body>
+<script>
+    document.getElementById('item1').addEventListener('mouseover',function(){
+        document.getElementById('item1_con').style.display='block';
+    });
+    document.getElementById('item1').addEventListener('mouseout',function(){
+        document.getElementById('item1_con').style.display='none';
+    });
+</script>
+</html>

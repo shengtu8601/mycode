@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <link rel="stylesheet" href="test.css"/>
+    <script src="jquery-2.1.1.min.js"></script>
+</head>
+<body>
+    <img s
+<div class="base">
+    <div class="mc" style="width: 200px;background-color: #43ff88;"></div>
+    <div class="mc"style="width: 200px;background-color: #87b9ff"></div>
+    <div class="mc"style="width: 200px;background-color: #fff82b"></div>
+  <div class="mc" style="width: 250px;background-color: #ff0000;"></div>
+</div>
+</body>
+<script>
+//    var mcs=document.querySelectorAll('.mc');
+//    for (var i = 0; i < mcs.length; i++) {
+//        mcs[i].addEventListener('mouseover',function(){
+//            for (var j = 0; j < mcs.length; j++) {
+//                mcs[j].style.width='200px';
+//            }
+//            this.style.width='250px';
+//        });
+//    }
+
+    $('.mc').mouseover(function(){
+        $(this).width(250).siblings().width(200)
+    });
+</script>
+</html>

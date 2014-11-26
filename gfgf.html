@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .div {
+            width: 20px;
+            height: 20px;
+            color: #ffffff;
+            float: left;
+            background: #000000;
+            border: 1px solid #cccccc;
+           cursor:pointer;
+        }
+
+
+    </style>
+</head>
+<body>
+<div style="position: relative">
+<img id="bigimg" style="width: 400px;height: 300px;margin-left: 0px;" src="" alt=""/>
+    <div style="position:absolute;top: 270px;left:300px;">
+        <div onclick="setimg('123.jpg');" class="div">1</div>
+        <div onclick="setimg('56.jpg');" class="div">
+            2
+        </div>
+        <div onclick="setimg('78.jpg');" class="div">
+            3
+        </div>
+        <div onclick="setimg('99.jpg');" class="div">
+            4
+        </div>
+    </div>
+</div>
+
+</body>
+<script type="text/javascript">
+    function setmargin(m) {
+        document.getElementById('bigimg').style.marginLeft = m + 'px'
+    }
+    function setimg(s) {
+        document.getElementById('bigimg').src = s
+    }
+    setimg('123.jpg');
+</script>
+</html>
